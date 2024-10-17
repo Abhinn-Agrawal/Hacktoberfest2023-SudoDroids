@@ -13,6 +13,17 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true">
     </com.example.sudokugame.BoardSudoku>
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/boardSudoku"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:id="@+id/deleteBtn"
         android:text="@string/delete"

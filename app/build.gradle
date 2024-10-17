@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.example.sudokugame"
         minSdk 21
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -38,7 +38,10 @@ android {
 }
 
 dependencies {
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.activity:activity-ktx:1.7.2'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
@@ -47,9 +50,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-     
-    implementation 'com.google.android.material:material:1.9.0'
-
     // lottie for splash screen
     implementation "com.airbnb.android:lottie:6.1.0"
 }
